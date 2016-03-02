@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>A simple example</title>
+    <link rel="stylesheet" href="./pannellum.css"/>
+    <script type="text/javascript" src="./pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "title":"Plató 1",
+    "author":"ja.moya@ua.es",
+    "panorama": "./img/pano1.jpg",
+    "autoLoad": true,
+    "compass": true,
+    "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "The skylight is supported by an iron truss and has a second, peaked skylight over it."
+                },
+                {
+                    "pitch": 10,
+                    "yaw": 25,
+                    "type": "info",
+                    "text": "Much of the library was constructed from cast-iron to reduce the risk of fire."
+                },
+                {
+                    "pitch": 20,
+                    "yaw": 50,
+                    "type": "info",
+                    "text": "The lighting was originally gas."
+                },
+                {
+                    "pitch": -10,
+                    "yaw": 100,
+                    "type": "info",
+                    "text": "The JHU library catalog contains the Peabody Library’s holdings.",
+                    "URL": "https://catalog.library.jhu.edu/"
+                },
+                {
+                    "pitch": -20,
+                    "yaw": -30,
+                    "type": "scene",
+                    "text": "Gallery",
+                    "sceneId": "gallery"
+                },
+                {
+                    "pitch": -30,
+                    "yaw": -60,
+                    "type": "scene",
+                    "text": "6th Floor",
+                    "sceneId": "6th-floor"
+                }
+            ]
+});
+</script>
+
+</body>
+</html>
+<!--https://raw.githubusercontent.com/josemamira/pannellum_test/master/pano1.jpg-->
