@@ -1,5 +1,5 @@
 # pannellum_test
-Javascript test for show panoramas using Pannellum library. 
+Javascript test for show panoramas using Pannellum (https://pannellum.org) library. 
 
 There are two test:
 
